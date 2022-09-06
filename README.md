@@ -27,8 +27,8 @@ python run_LNLTC.py --dataset='AG' --noise_percentage=0.2
 ```
 
 - The params could be :
-  - --dataset =\{AG,yelp, yahoo\}
-  - --noise_percentage ={0.2, 0.5,...., 0.9},  the ratio of symmatric noise
+     - --dataset =\{AG,yelp, yahoo\}
+     - --noise_percentage ={0.2, 0.5,...., 0.9},  the ratio of symmatric noise
 
 The results will be written into results/main_lnl.txt
 
