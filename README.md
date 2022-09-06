@@ -1,6 +1,6 @@
  
  # LNPL 
- A Model  for learning under noisy and semi-supervised settings
+ A model  for learning under noisy and semi-supervised settings
  
  This is the source code for the paper: Murtadha, Ahmed, et al. "Towards Robust Learning with Noisy and Pseudo Labels for Text Classification". If you use the code,  please cite the paper: 
  ```
