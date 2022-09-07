@@ -16,7 +16,6 @@ import numpy as np
 from torch.utils.data import DataLoader,ConcatDataset, random_split
 from data_utils import   process_pt
 import matplotlib.pyplot as plt
-import pandas as pd
 from tqdm import tqdm
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -55,18 +54,7 @@ class Instructor:
         if x < warmup:
             return x / warmup
         return 1.0 - x
-    def _print_args(self):
-        n_trainable_params, n_nontrainable_params = 0, 0
-        for p in self.model.parameters():
-            n_params = torch.prod(torch.tensor(p.shape))
-            if p.requires_grad:
-                n_trainable_params += n_params
-            else:
-                n_nontrainable_params += n_params
-        logger.info('n_trainable_params: {0}, n_nontrainable_params: {1}'.format(n_trainable_params, n_nontrainable_params))
-        logger.info('> training arguments:')
-        for arg in vars(self.opt):
-            logger.info('>>> {0}: {1}'.format(arg, getattr(self.opt, arg)))
+    
 
     def _evaluate_pt(self, model, data_loader):
         n_correct, n_total = 0, 0
