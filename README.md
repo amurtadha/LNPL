@@ -17,6 +17,7 @@ The datasets used in our experminents can be downloaded from this [link](https:/
 Required packages are listed in the requirements.txt file:
 
 ```
+pip install -r requirements.txt
 ```
 # How to use
 
