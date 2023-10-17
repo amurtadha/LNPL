@@ -33,7 +33,7 @@ python run_LNLTC.py --dataset='AG' --noise_percentage=0.2
 
 The results will be written into results/main_lnl.txt
 
-* Run the following code to train under  semi-supervised settuings
+* Run the following code to train under  semi-supervised settings
 ```
 python run_SSTC.py --dataset='AG' --train_sample=30
 ```
